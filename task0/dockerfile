@@ -1,0 +1,11 @@
+# Base image
+FROM ubuntu:latest
+
+# Update APT
+RUN apt-get update
+
+# Upgrade currently installed software
+RUN apt-get upgrade -y
+
+# Create a script to echo "Hello, World!"
+RUN echo "echo 'Hello, World!'" > dockerfile
